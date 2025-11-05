@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <style>
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        *{
+            box-sizing: border-box;
+            font-family: "Poopin", sans-serif;
+        }
+        .logo{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        div{
+            display: block;
+            unicode-bidi: isolate;
+            font-size: 30px;
+        }
+        nav a{
+            margin: 0 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.8s;
+            font-size: 25px;
+        }
+        a:-webkit-any-link{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .skills{
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4917bd,#9022d9,#5065ce,#5ec8e8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            text-align: center;
+            unicode-bidi: isolate;
+        }
+        .skills-cnt{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .skill-card{
+            background: rgba(255, 255, 255, 0.28);
+            border-radius: 15px;
+            padding: 30px 20px;
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.4s ease;
+        }
+        .skill-card:hover{
+            transform: translateY(-10px) scale(1.05);
+            background: rgba(255, 255, 255, 0.38);
+        }
+        i{
+            font-style: italic;
+        }
+        .skill-card i{
+            font-size: 3rem;
+            color: orange;
+            margin-bottom: 15px;
+        }
+        p{
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .skills h2{
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        h2{
+            display: block;
+            font-size: 2.2rem;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+            color: rgb(215, 231, 114);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            display: block;
+            unicode-bidi: isolate;
+        }
+        body{
+            color: white;
+            text-align: center;
+            animation: gradientbg 10s ease infinite;
+            background-size: 500% 500%;
+        }
+        @keyframes gradientbg{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="logo">Mayank Sharma</div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="skills">
+        <h2>Current Skills:</h2>
+        <div class="skills-cnt">
+            <div class="skill-card hidden show">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-card hidden show">
+                <i class="fas fa-css"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-card hidden show">
+                <i class="fab fa-js"></i>
+                <p>Java Script</p>
+            </div>
+            <div class="skill-card hidden show">
+                <i class="fab fa-python"></i>
+                <p>PYTHON</p>
+            </div>
+        </div>
+        <h2 class="tools-ttl">Tools used by me</h2>
+        <div class="tools-cnt">
+            <div class="tool-cars hidden show">
+                <i class="fab fa-github"></i>
+                <p>Git Hub</p>
+            </div>
+            <div class="tool-cars hidden show">
+                <i class="fab fa-vscode"></i>
+                <p>VS Code</p>
+            </div>
+            <div class="tool-cars hidden show">
+                <i class="fab fa-terminal"></i>
+                <p>Terminal</p>
+            </div>
+            <div class="tool-cars hidden show">
+                <i class="fab fa-compiler"></i>
+                <p>Compiler</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

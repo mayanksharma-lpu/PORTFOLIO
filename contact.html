@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        /* Contact */
+.contact-links a { color: #ffd700; text-decoration: none; transition: 0.3s; }
+.contact-links a:hover { color: white; text-decoration: underline; }
+/* Contact Section */
+.contact {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #4361ee, #4cc9f0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #9d4edd;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #f72585;
+  transform: scale(1.05);
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(10px);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #ffd700;
+}
+header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        *{
+            box-sizing: border-box;
+            font-family: "Poopin", sans-serif;
+        }
+        .logo{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        div{
+            display: block;
+            unicode-bidi: isolate;
+            font-size: 30px;
+        }
+        nav a{
+            margin: 0 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.8s;
+            font-size: 25px;
+        }
+        a:-webkit-any-link{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        section{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">Mayank Sharma</div>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+      
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Links -->
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/mayanksharmajind" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h3>LinkedIn</h3>
+            <p>connect with me</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/mayanksharma-lpu" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <div>
+            <h3>GitHub</h3>
+            <p>Check out my work</p>
+          </div>
+        </a>
+
+        <a href="mailto:mayanksharmajind@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>mayanksharmajind@gmaiL.com</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
